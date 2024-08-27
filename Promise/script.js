@@ -46,4 +46,9 @@ document.getElementById('getNewsBtn').addEventListener('click', () => {
 }
 );
 
+document.getElementById('search').addEventListener('input', (event) => {
+    const cari = event.target.value;
+    fetchnews(cari);
+});
+
 fetchnews();
